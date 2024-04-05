@@ -1,0 +1,23 @@
+[
+  {
+    "FirstName": "Thanay",
+    "LastName": "Kumar",
+    "Gender": "Male",
+    "Salary": 5000,
+    "Joined": "2020-03-02T00:00:00"
+  },
+  {
+    "FirstName": "Supritha",
+    "LastName": "Reddy",
+    "Gender": "Female",
+    "Salary": 7000,
+    "Joined": "2018-07-28T00:00:00"
+  },
+  {
+    "FirstName": "Lalitha",
+    "LastName": "Achar",
+    "Gender": "Female",
+    "Salary": 6000,
+    "Joined": "2017-11-11T00:00:00"
+  }
+]
