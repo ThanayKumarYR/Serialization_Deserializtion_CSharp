@@ -53,12 +53,25 @@ namespace SerializationDeserialization
 
             //Serialization : Converts Objects to UTF - 8 for better performance. 
             byte[] IncreasedPerformance = JsonSerializer.SerializeToUtf8Bytes(employees);
+            Console.WriteLine();
             foreach (byte item in IncreasedPerformance)
             {
                 Console.Write(item + ", ");
             }
-
+            Console.WriteLine();
             File.WriteAllText("employees.json", JsonList);
+
+
+            //Deserialization: Converts Json format to suitable object.
+            var json_test = File.ReadAllText("employees.json");
+
+            List<Employee> employeesList = JsonSerializer.Deserialize<List<Employee>>(json_test);
+
+            Console.WriteLine("\n Deserialization of json !");
+            foreach (Employee employee in employeesList) 
+            {
+                Console.WriteLine(employee.FirstName + " " + employee.LastName + ", " + employee.Gender + ", " + employee.Joined);
+            }
         }
     }
 }
